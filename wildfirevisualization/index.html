@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <div id="legendDIV_background">
+    </div>
+    <div class="legendDIV">
+    <ul class="legend" id="legend_allOwners">
+      <li>FRP: fire intensity</li>
+      <li><span style='background-color:#C07CBE;'></span> 0-1.7 </li>
+      <li><span style="background-color:#DFBCDD;"> </span>1.7-3.6</li>
+      <li><span style="background-color:#FEFDFC;"> </span>3.6-6.6</li>
+      <li><span style="background-color:#FCD47F;"> </span>6.6-14.3</li>
+      <li><span style="background-color:#FBAC02;"> </span>  > 14.3</li>
+    </ul>
+
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="sidebar_top">
+        <h2 class="Slide-title">Chile  <br>Wildfires visualization <br>in 2018</h2>
+        <p class="Slide-text">by Fangnan Du</p>
+      </div>
+      <div id= "sidebar-bottom">
+        <button class="abutton" id="previous">
+          Previous
+        </button>
+        <button class="abutton" id="next">
+          Next
+        </button>
+        <h3 id="data-attribution">
+          Data: NASA FIRMS VIIRS Fire Data
+        </h3>
+      </div>
+    </div>
+    <div id="alertpoint">click on the point</div>
+    <div id="alertpolygon">click on the polygon</div>
+
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/chroma.js"></script>
+    <script src="js/sidebar_text.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
